@@ -1,0 +1,13 @@
+## Exploratory Data Analysis for the Estonian ship disaster. 
+
+## Step 1: Import the necessary Python libraries that I need to use
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(color_codes=True)
+
+## Step 2: Import the table from the CSV file in my downloads folder
+
+df = pd.read_csv('/Users/Tony_Grant/Downloads/datasets_800154_1372289_estonia-passenger-list.csv')

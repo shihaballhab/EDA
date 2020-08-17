@@ -1,0 +1,19 @@
+df.head(5)
+Out[9]: 
+   PassengerId  Country        Firstname  Lastname Sex  Age Category  Survived
+0            1   Sweden      ARVID KALLE     AADLI   M   62        P         0
+1            2  Estonia              LEA   AALISTE   F   22        C         0
+2            3  Estonia             AIRI   AAVASTE   F   21        C         0
+3            4   Sweden             JURI     AAVIK   M   53        C         0
+4            5   Sweden  BRITTA ELISABET  AHLSTROM   F   55        P         0
+
+## Exploring somme of the variables
+
+## Ages: first, let's start off with a histogram to get an idea of how old the passengers were on the ship. Any outliers? Very old? Very young? Seems like that would shed some light on the survival rate 
+
+histo = df[['Age']].plot.hist(bins = 10, title = 'How old were they?')
+
+## Well that's a bummer. It looks like a handful of infants and seniors were on board. Nevertheless, it looks like the passengers' ages reflect the society as a whole; A majority of 20-75 year-olds tapering off in both directions. 
+
+## So now I have an idea of who was on board, now I can start looking for any patterns on who did/didn't survive and why/why not. 
+
